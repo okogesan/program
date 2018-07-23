@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="main.css">
+
+<title></title>
+</head>
+<body>
+<div class="bg">
+    <div class="contents">
+      <div id="title">みんなで割り勘</div>
+<form name="field">
+      <h2>本日のお会計</h2>
+      <input name="form1" type="number" id="price" onkeyup="getPrice()">
+      <p>本日の合計のお会計は<span id="outputprice">　</span>円です</p>
+      <h2>合計人数</h2>
+      <p><input name="form2" type="number" id="persons" onInput="Wari()"></span>人です</p>
+      <p>割り勘するとひとりあたり<span id="wariprice">　</span>円です</p>
+      <p>お酒を飲んでいない人はいますか？ <button type="button" id="button" onclick="check()">YES</button></p>
+    </div>
+  <div id="contents2">
+    <h2>お酒を飲んでいない人の人数</h2>
+    <p><input type="number" id="persons2" onkeyup="nonAl(),Alprice()"></span>人です</p>
+    <p>お酒を飲んでいない人の一人当たりの金額は<span id="nonAlprice">　</span>円です</p>
+    <p>お酒を飲んだ人の一人当たりの金額は<span id="Alprice">　</span>円です</p>
+  </div>
+</form>
+
+</div>
+<script type="text/javascript" src="test.js"></script>
+</body>
+</html>
